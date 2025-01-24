@@ -30,6 +30,7 @@ def empirical_analysis_project(hypergraph, true_partition_hypergraph, true_matri
 
     true_partition_hypergraph_list = list(true_partition_hypergraph.values())
     n_nodes = max([i for hyperedge in hypergraph for i in hyperedge]) + 1
+    print("The number of nodes is", n_nodes)
 
     distribution_length = [len(edge) for edge in hypergraph]
     plt.figure()
